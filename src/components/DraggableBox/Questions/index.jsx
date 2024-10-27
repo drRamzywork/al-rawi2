@@ -94,7 +94,7 @@ const Questions = ({ showQuestions
         <div className="Navbar">
           <div className="ButtonGroup">
 
-            <span className="CloseIcon" onClick={() => setShowQuestions(false)}>
+            <span className="CloseIcon" onClick={() => { setShowQuestions(false) }}>
               <IoClose />
             </span>
           </div>
@@ -118,8 +118,9 @@ const Questions = ({ showQuestions
 
                 </div>
                 <button onClick={() => { setCurrentVideo('https://toot.one/rawai/ar/3.mp4'); setShowQuestions(false); setMuted(false) }}>موقع القصر</button>
-
               </li>
+
+
               <li>
 
                 <div className={styles.icon_container}>
@@ -130,6 +131,7 @@ const Questions = ({ showQuestions
 
 
               </li>
+
             </ul>
 
           </div>

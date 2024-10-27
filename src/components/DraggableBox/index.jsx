@@ -18,8 +18,7 @@ const DraggableBox = () => {
   const [showNewMenu, setShowNewMenu] = useState(false);
   // NEW LOGIC
 
-
-  const [isMenu, setIsMenu] = useState(false); /* TODO: Change it to false */
+  const [isMenu, setIsMenu] = useState(true);
 
 
   return (
@@ -55,6 +54,8 @@ const DraggableBox = () => {
         setIsMenu={setIsMenu}
         showElements={showElements}
         setShowElements={setShowElements}
+        setCurrentVideo={setCurrentVideo}
+        setMuted={setMuted}
 
       />
 
